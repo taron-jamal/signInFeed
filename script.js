@@ -1,8 +1,8 @@
 // Social Media clone.
-// Sign-in and Mini-feed.
+// Signin + Mini Feed.
 
 
-// Array asking for/verifying login information.
+// Array - login information.
   var database = [
   {
     username: "kumlaude",
@@ -18,7 +18,7 @@ var userNamePrompt = prompt("Username:");
 var passwordPrompt = prompt("Password:");
 
 
-// SignIn Function:
+// Function - signin + password verification:
 function signIn(user, pass) {
   if (user === database[0].username &&
       pass === database[0].password) {
@@ -28,11 +28,10 @@ function signIn(user, pass) {
       }
 }
 
-// Sign-in verification:
 signIn(userNamePrompt, passwordPrompt);
 
 
-// Individual feed after login/verification.
+// Mini Feed - viewing dashboard.
   var newsFeed = [
     {
       username: "Picasso",
